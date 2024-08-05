@@ -1,8 +1,7 @@
+import { Button, ConfigProvider } from 'antd';
 
-import React from 'react'
-import { Button, ConfigProvider } from "antd";
-import styles from './styles.module.scss'
-const ButtonsBar = ({buttonsConfig =[]}) => {
+import styles from './styles.module.scss';
+const ButtonsBar = ({ buttonsConfig = [] }) => {
   return (
     <div className={styles.buttonsBarContainer}>
       {buttonsConfig.map((button) => {
@@ -14,6 +13,6 @@ const ButtonsBar = ({buttonsConfig =[]}) => {
       })}
     </div>
   );
-}
+};
 
 export default ButtonsBar;

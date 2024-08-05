@@ -1,13 +1,12 @@
-import { ConfigProvider, Tree as TreeAntD } from "antd";
-import React from 'react'
+import { ConfigProvider, Tree as TreeAntD } from 'antd';
 
-const TreeData =({treeData, setSelectedKeys}) => {
+const TreeData = ({ setSelectedKeys, treeData }) => {
   return (
     <ConfigProvider
       theme={{
         components: {
           Tree: {
-            colorBgContainer: "#CCF4F4",
+            colorBgContainer: '#CCF4F4',
           },
         },
       }}
@@ -21,6 +20,6 @@ const TreeData =({treeData, setSelectedKeys}) => {
       />
     </ConfigProvider>
   );
-}
+};
 
 export default TreeData;
